@@ -12,6 +12,13 @@ import java.util.ArrayList;
  */
 public class Videojuego {
     
+    
+    public ArrayList<String> grupos (ArrayList<String> list){
+        ArrayList<String> list_unico = new ArrayList<String>();
+       
+        return list_unico;
+    }
+    
     public ArrayList<Integer> necesito_del_grupo (ArrayList<Integer> list_ind, ArrayList<String>list_grup, String grup_interes){
         ArrayList<Integer> list_ind_interes = new ArrayList<Integer>();
         
@@ -23,9 +30,9 @@ public class Videojuego {
         return list_ind_interes;
     }
     
-    public ArrayList<Integer> sirven_a_nestor (ArrayList<Integer> lista_sobra_pedro, ArrayList<Integer> list_tiene_nestor){
-        ArrayList<Integer> list_necesita_nestor_de_pedro = new ArrayList<Integer>();
-        for(Integer indice: lista_sobra_pedro){
+    public ArrayList<String> sirven_a_nestor (ArrayList<String> lista_sobra_pedro, ArrayList<String> list_tiene_nestor){
+        ArrayList<String> list_necesita_nestor_de_pedro = new ArrayList<String>();
+        for(String indice: lista_sobra_pedro){
             if(!list_tiene_nestor.contains(indice)){
                 list_necesita_nestor_de_pedro.add(indice);
             }
@@ -33,6 +40,16 @@ public class Videojuego {
         return list_necesita_nestor_de_pedro;
         
     }
+    
+    
+        public static Integer cuantos_cambian(ArrayList<String> entradaMaria, ArrayList<String> entradaMarta) {
+        ArrayList<String> listaMaria = new ArrayList<>();
+        ArrayList<String> listaMarta = new ArrayList<>();
+
+
+        return listaMarta.size();
+    }
+    
     
     
     
